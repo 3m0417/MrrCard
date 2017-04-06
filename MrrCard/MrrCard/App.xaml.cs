@@ -19,6 +19,7 @@ namespace MrrCard
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<CardPage>();
         }
     }
 }
