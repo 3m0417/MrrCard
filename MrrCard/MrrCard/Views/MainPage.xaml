@@ -2,10 +2,78 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="MrrCard.Views.MainPage"
-             Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-  </StackLayout>
+             Title="M.R.R. Computers and Systems"
+             BackgroundColor="#00151b">
+    
+    <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+        <Button Text="M.R.R. Computers and Systems"
+                TextColor="#009696"
+                FontSize="24"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Start"
+                Command="{Binding GotoOurSiteCommand}" />
+        <BoxView BackgroundColor="#009696"
+                 HeightRequest="1"
+                 Margin="0, -10, 0, 0" />
+
+        <Label Text="Founded in 1999 by Meir Rotfleisch. We specialize in Customized Small and Medium Sized Business Database solutions using the latest Microsoft Development tools  C#,VB,Asp.Net  with emphasis on off site Data Collection , Responsive WebSite integration , and Office Network integration.
+Data is power and we can help you empower your business today."
+               TextColor="#aabbbb"
+               FontSize="20"/>
+
+        <BoxView HeightRequest="20" />
+        
+        <Label Text="For a Free Consultation Contact us today using the below links"
+               TextColor="White"
+               FontSize="24"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0">
+            <controls:ImageButton BackgroundColor="#595959" 
+                                  HeightRequest="50" 
+                                  WidthRequest="50" 
+                                  Image="Facebook32" 
+                                  ImageHeightRequest="50" 
+                                  ImageWidthRequest="50"
+                                  Command="{Binding GotoFacebookCommand}"/>
+
+            <controls:ImageButton BackgroundColor="#595959" 
+                                  HeightRequest="50" 
+                                  WidthRequest="50" 
+                                  Image="LinkedIn32" 
+                                  ImageHeightRequest="50" 
+                                  ImageWidthRequest="50"
+                                  Command="{Binding GotoFacebookCommand}"/>
+
+            <controls:ImageButton BackgroundColor="#595959" 
+                                  HeightRequest="50" 
+                                  WidthRequest="50" 
+                                  Image="WhatsApp32"
+                                  ImageHeightRequest="50" 
+                                  ImageWidthRequest="50"
+                                  Command="{Binding GotoFacebookCommand}"/>
+
+            <controls:ImageButton BackgroundColor="#595959" 
+                                  HeightRequest="50" 
+                                  WidthRequest="50" 
+                                  Image="phone"
+                                  ImageHeightRequest="50" 
+                                  ImageWidthRequest="50"
+                                  Command="{Binding GotoFacebookCommand}"/>
+
+        </StackLayout>
+
+        <controls:ImageButton BackgroundColor="#595959" 
+                              HeightRequest="70" 
+                              WidthRequest="100"
+                              Image="userlogo" 
+                              ImageHeightRequest="50" 
+                              ImageWidthRequest="50"
+                              HorizontalOptions="Center"
+                              Command="{Binding GotoFacebookCommand}"/>
+    </StackLayout>
 </ContentPage>
