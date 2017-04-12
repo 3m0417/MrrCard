@@ -47,7 +47,7 @@ Data is power and we can help you empower your business today."
                                   Image="LinkedIn32" 
                                   ImageHeightRequest="50" 
                                   ImageWidthRequest="50"
-                                  Command="{Binding GotoFacebookCommand}"/>
+                                  Command="{Binding GotoLinkedinCommand}"/>
 
             <controls:ImageButton BackgroundColor="#595959" 
                                   HeightRequest="50" 
@@ -55,7 +55,7 @@ Data is power and we can help you empower your business today."
                                   Image="WhatsApp32"
                                   ImageHeightRequest="50" 
                                   ImageWidthRequest="50"
-                                  Command="{Binding GotoFacebookCommand}"/>
+                                  Command="{Binding GotoWhatsAppCommand}"/>
 
             <controls:ImageButton BackgroundColor="#595959" 
                                   HeightRequest="50" 
@@ -63,7 +63,7 @@ Data is power and we can help you empower your business today."
                                   Image="phone"
                                   ImageHeightRequest="50" 
                                   ImageWidthRequest="50"
-                                  Command="{Binding GotoFacebookCommand}"/>
+                                  Command="{Binding GotoCallUsCommand}"/>
 
         </StackLayout>
 
@@ -74,6 +74,6 @@ Data is power and we can help you empower your business today."
                               ImageHeightRequest="50" 
                               ImageWidthRequest="50"
                               HorizontalOptions="Center"
-                              Command="{Binding GotoFacebookCommand}"/>
+                              Command="{Binding GotoMRRCardCommand}"/>
     </StackLayout>
 </ContentPage>

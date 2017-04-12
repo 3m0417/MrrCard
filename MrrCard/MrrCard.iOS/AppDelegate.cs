@@ -27,6 +27,12 @@ namespace MrrCard.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
 
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
+            {
+                TextColor = UIColor.White
+            });
+            UINavigationBar.Appearance.BarTintColor = new UIColor(79.0f/255.0f, 176.0f/255.0f, 209.0f/255.0f, 1.0f);
+
             return base.FinishedLaunching(app, options);
         }
     }

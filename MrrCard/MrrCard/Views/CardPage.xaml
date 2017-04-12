@@ -3,6 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="MrrCard.Views.CardPage">
-  
+             x:Class="MrrCard.Views.CardPage"
+             BackgroundColor="#00151b"
+             Title="Business Card">
+
+    <Image Source="fullcard" 
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="StartAndExpand"
+           Aspect="AspectFit"
+           />
+
 </ContentPage>
